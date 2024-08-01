@@ -1,10 +1,5 @@
 import { styled } from "styled-components";
-import {
-  BodyText,
-  Subheader,
-  SubheaderBlack,
-  SubheaderRed,
-} from "../../styles/Typography";
+import { BodyText, SubheaderBlack } from "../../styles/Typography";
 
 const CluesSection = () => {
   return (

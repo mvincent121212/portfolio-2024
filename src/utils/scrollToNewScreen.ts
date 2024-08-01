@@ -1,5 +1,0 @@
-
-
-const scrollToNewScreen = ({currentPos, direction}) => {
-    
-}

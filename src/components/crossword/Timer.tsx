@@ -8,7 +8,7 @@ type TimerProps = {
 };
 
 const Timer = ({ time }: TimerProps) => {
-  const { minutes, seconds, milliseconds } = formatTime(time);
+  const { minutes, seconds } = formatTime(time);
   return (
     <Container>
       <SSmallHeader>

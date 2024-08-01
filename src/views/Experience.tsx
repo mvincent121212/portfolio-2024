@@ -1,22 +1,8 @@
 import styled from "styled-components";
-import {
-  green,
-  lightBlue,
-  lightRed,
-  lightestBlue,
-  lightestRed,
-  mustard,
-  night,
-  offBlack,
-  offWhite,
-  red,
-  white,
-} from "../constants/colors";
+import { lightBlue, lightestBlue, night } from "../constants/colors";
 import {
   BodyTextWhite,
   CutoutSmallHeader,
-  Header,
-  HeaderInk,
   HeaderWhite,
   SmallHeader,
 } from "../styles/Typography";
@@ -119,33 +105,6 @@ const LongContainer = styled.div`
   );
 `;
 
-// const NotebookPage = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-//   background-color: ${offBlack};
-
-//   // -webkit-box-shadow: -1px 10px 40px 0px rgba(55, 63, 81, 1);
-//   // -moz-box-shadow: -1px 10px 40px 0px rgba(55, 63, 81, 1);
-//   // box-shadow: -1px 10px 40px 0px rgba(55, 63, 81, 1);
-`
-
-// const NotebookHeaderSection = styled.div`;
-//   height: 4rem;
-//   width: calc(100vw - 16rem);
-//   padding: 0 2rem;
-//   background-color: ${white};
-//   margin: 0 auto;
-//   overflow: visible;
-// `;
-
-// const SHeaderInk = styled(HeaderInk)`
-//   margin-left: 8rem;
-//   padding-top: 4rem;
-//   z-index: 3;
-//   overflow: visible;
-// `
-
 const TopHeader = styled(HeaderWhite)`
   margin-top: 4rem;
   border-radius: 8px;
@@ -166,34 +125,6 @@ const Content = styled.div`
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  // background-color: ${offBlack};
-  // // background-image: url("src/assets/images/chalkboard-2.jpg");
-  // background-image: repeating-linear-gradient(
-  //   to bottom,
-  //   ${white} 0 60px,
-  //   ${lightestBlue} 60px,
-  //   ${lightBlue} 62px
-  // );
-  // box-shadow: 28px 24px 50px 12px rgba(0,0,0,0.75),0px 10px 15px -3px rgba(0,0,0,0.75);
-
-  // background-size: 540px 360px;
-  // background-size: stretch;
-`;
-
-const LeftHoles = styled.div`
-  position: absolute;
-  left: 2rem;
-  top: 0;
-  width: 4rem;
-  height: 100%;
-  background-image: radial-gradient(
-    circle at center,
-    ${offBlack} 0,
-    ${offBlack} 1.5rem,
-    ${white} 1.5rem 4rem
-  );
-  background-size: 4rem 8rem;
-  background-repeat: repeat-y;
 `;
 
 const ArrowOne = styled.img`
@@ -363,30 +294,9 @@ const GithubIcon = styled.img`
   }
 `;
 
-const LeftRedLine = styled.div`
-  position: absolute;
-  left: 16rem;
-  top: 4rem;
-  background-color: ${lightRed};
-  width: 4px;
-  height: calc(100% - 4rem);
-  z-index: 2;
-`;
-
-const RightRedLine = styled.div`
-  position: absolute;
-  right: 18rem;
-  top: 4rem;
-  background-color: ${lightestRed};
-  width: 4px;
-  height: calc(100% - 4rem);
-  z-index: 2;
-`;
-
 const SBodyTextWhite = styled(BodyTextWhite)`
   margin: 0;
   margin-bottom: 1rem;
-
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -399,5 +309,4 @@ const SBodyTextWhite = styled(BodyTextWhite)`
   @media (max-width: 500px) {
     font-size: 0.75rem;
   }
-
 `;

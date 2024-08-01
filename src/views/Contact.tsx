@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { Container } from "../styles/Container";
-import { offBlack, offWhite, red, white } from "../constants/colors";
+import { red, white } from "../constants/colors";
 import { HeaderWhite } from "../styles/Typography";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
@@ -158,7 +158,6 @@ const CircleOne = styled.div`
     height: 50vw;
     width: 50vw;
   }
-
 `;
 
 const CircleTwo = styled(CircleOne)`
@@ -166,7 +165,7 @@ const CircleTwo = styled(CircleOne)`
   width: 49vw;
 
   @media (max-width: 768px) {
-     width: 55vw;
+    width: 55vw;
   }
 `;
 
@@ -176,7 +175,7 @@ const CircleThree = styled(CircleOne)`
 
   @media (max-width: 768px) {
     width: 60vw;
- }
+  }
 `;
 
 const CircleFour = styled(CircleOne)`
@@ -185,7 +184,7 @@ const CircleFour = styled(CircleOne)`
 
   @media (max-width: 768px) {
     width: 65vw;
- }
+  }
 `;
 
 const CircleFive = styled(CircleOne)`
@@ -194,7 +193,7 @@ const CircleFive = styled(CircleOne)`
 
   @media (max-width: 768px) {
     width: 74vw;
- }
+  }
 `;
 
 const CircleSix = styled(CircleOne)`
@@ -203,7 +202,7 @@ const CircleSix = styled(CircleOne)`
 
   @media (max-width: 768px) {
     width: 82vw;
- }
+  }
 `;
 
 const Link = styled.a`

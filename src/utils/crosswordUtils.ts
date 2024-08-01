@@ -59,7 +59,6 @@ export const getNewFocusTarget = ({ value, lastIndex, activeRowOrCol }: getNewFo
   export const formatTime = (time: number) => {
     const minutes = Math.floor((time/ 60000) % 60).toString().padStart(2, "0");
     const seconds = Math.floor((time / 1000) % 60).toString().padStart(2, "0");
-    const milliseconds = ((time / 10) % 100).toString().padStart(2, "0");
   
-    return { minutes, seconds, milliseconds };
+    return { minutes, seconds };
   }

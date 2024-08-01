@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { styled } from "styled-components";
 import _ from "lodash";
 
-import { black, green, mustard, night, red, white } from "../../constants/colors";
+import { black, green, mustard, night, white } from "../../constants/colors";
 import { SOLUTION_GRID, TileInfo } from "../../constants/solutionGrid";
 import { FullRowOrColIndex, Index } from "../../types/types";
 import CrosswordInput from "./CrosswordInput";

@@ -1,20 +1,7 @@
 import { styled } from "styled-components";
 import { Container } from "../styles/Container";
-import {
-  green,
-  green70,
-  green80,
-  green85,
-  green90,
-  green95,
-} from "../constants/colors";
-import {
-  BodyText,
-  BodyTextWhite,
-  HeaderOffBlack,
-  HeaderWhite,
-  SmallHeader,
-} from "../styles/Typography";
+import { green, green85, green90, green95 } from "../constants/colors";
+import { BodyTextWhite, HeaderWhite } from "../styles/Typography";
 import { ViewIds } from "../constants/viewIds";
 
 const About = () => {
@@ -28,7 +15,10 @@ const About = () => {
         </TriangleDisplay>
         <AboutContent>
           <Heading>
-            <SHeaderWhite>ABOUT<br/></SHeaderWhite>
+            <SHeaderWhite>
+              ABOUT
+              <br />
+            </SHeaderWhite>
           </Heading>
           <BodyTextWhite>
             I am a software engineer based in Brooklyn, NY. Since moving to the
@@ -66,16 +56,15 @@ const Heading = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
 
 const SHeaderWhite = styled(HeaderWhite)`
-  margin-bottom: 0
-`
+  margin-bottom: 0;
+`;
 
 const TriangleDisplay = styled.div`
   display: flex;
   flex: 1 1 0;
-
 `;
 
 const AboutContent = styled.div`
