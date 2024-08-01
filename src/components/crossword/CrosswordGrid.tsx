@@ -2,29 +2,35 @@ import { useState } from "react";
 import { styled } from "styled-components";
 import { SOLUTION_GRID, TileInfo } from "../../constants/solutionGrid";
 import CrosswordTile from "./CrosswordTile";
-import { BodyText } from "../../styles/Typography";
 import { FullRowOrColIndex, Index } from "../../types/types";
 
 type CrosswordGridProps = {
   currentGrid: TileInfo[][];
   setCurrentGrid: React.Dispatch<React.SetStateAction<TileInfo[][]>>;
+  setSolved: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const CrosswordGrid = ({ currentGrid, setCurrentGrid, setSolved, setIsActive }: CrosswordGridProps) => {
+const CrosswordGrid = ({
+  currentGrid,
+  setCurrentGrid,
+  setSolved,
+  setIsActive,
+}: CrosswordGridProps) => {
   const [activeRowOrCol, setActiveRowOrCol] =
     useState<FullRowOrColIndex>(undefined);
   const [activeIndex, setActiveIndex] = useState<Index>(undefined);
 
-  if(JSON.stringify(currentGrid) === JSON.stringify(SOLUTION_GRID)) {
-    setSolved(true)
-    setIsActive(false)
+  if (JSON.stringify(currentGrid) === JSON.stringify(SOLUTION_GRID)) {
+    setSolved(true);
+    setIsActive(false);
   }
 
   return (
     <Container>
       {SOLUTION_GRID.map((row, rowIndex) => {
         return (
-          <Row>
+          <Row key={rowIndex}>
             {row.map(([letter, marker], columnIndex) => {
               return (
                 <CrosswordTile
