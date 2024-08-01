@@ -1,8 +1,5 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -39,4 +36,40 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+@font-face {
+  font-family: 'Darwin';
+  src: url(./fonts/DarwinSerif-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Medium';
+  src: url(./fonts/Fontspring-DEMO-proximanova-medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold Italic';
+  src: url('./fonts/Fontspring-DEMO-proximanovacond-semiboldit.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Playwrite Light';
+  src: url(./fonts/PlaywriteNO-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Windsong';
+  src: url(./fonts/WindSong-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Bad Script';
+  src: url(./fonts/BadScript-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Indie Flower';
+  src: url('./fonts/IndieFlower-Regular.ttf') format('truetype');
 }

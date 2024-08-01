@@ -1,35 +1,101 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Navigation from "./deprecated/navigation/Navigation";
+import Hero from "./views/Hero";
+import About from "./views/About";
+import Experience from "./views/Experience";
+import Quiz from "./views/Quiz";
+import Contact from "./views/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [screenPositionIndex, setScreenPositionIndex] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Hero />
+      <About />
+      <Experience />
+      <Quiz />
+      <Contact />
+      {/* <Navigation
+        screenPositionIndex={screenPositionIndex}
+        setScreenPositionIndex={setScreenPositionIndex}
+      /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
+// const [prevIndex, setPrevIndex] = useState(0);
+
+// if (prevIndex !== screenPositionIndex) {
+
+//   setPrevIndex(screenPositionIndex);
+// }
+
+// useEffect(() => {
+//   window.addEventListener("touchmove", (e) => {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     handleScroll({
+//       scrollDirection,
+//       screenPositionIndex,
+//       setScreenPositionIndex,
+//     });
+//   });
+
+//   window.addEventListener("scroll", (e) => {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     handleScroll({
+//       scrollDirection,
+//       screenPositionIndex,
+//       setScreenPositionIndex,
+//     });
+//   });
+
+//   window.addEventListener("keyup", (e) => {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     decrementIndex({ screenPositionIndex, setScreenPositionIndex });
+//   });
+
+//   window.addEventListener("keydown", (e) => {
+//     e.stopPropagation();
+//     e.preventDefault();
+//     incrementIndex({ screenPositionIndex, setScreenPositionIndex });
+//   });
+
+//   return () => {
+//     window.removeEventListener("touchmove", (e) => {
+//       e.stopPropagation();
+//       e.preventDefault();
+//       handleScroll({
+//         scrollDirection,
+//         screenPositionIndex,
+//         setScreenPositionIndex,
+//       });
+//     });
+//     window.removeEventListener("scroll", (e) => {
+//       e.stopPropagation();
+//       e.preventDefault();
+//       handleScroll({
+//         scrollDirection,
+//         screenPositionIndex,
+//         setScreenPositionIndex,
+//       });
+//     });
+//     window.removeEventListener("keyup", (e) => {
+//       e.stopPropagation();
+//       e.preventDefault();
+//       decrementIndex({ screenPositionIndex, setScreenPositionIndex });
+//     });
+
+//     window.removeEventListener("keydown", (e) => {
+//       incrementIndex({ screenPositionIndex, setScreenPositionIndex });
+//       e.stopPropagation();
+//       e.preventDefault();
+//     });
+//   };
+// }, []);
