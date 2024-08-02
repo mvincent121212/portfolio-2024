@@ -263,6 +263,11 @@ const Footer = styled.div`
   align-items: flex-end;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 500px) {
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+  }
 `;
 
 const FigmaIcon = styled.img`

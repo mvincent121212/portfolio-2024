@@ -120,8 +120,9 @@ export const CutoutSmallHeader = styled(SmallHeader)`
 export const BigCutout = styled(Header)`
   background-color: ${night};
   color: ${white};
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 16px;
+  font-family: 'Darwin', Georgia, serif;
 
   @media (max-width: 500px) {
     margin: 0 1rem;

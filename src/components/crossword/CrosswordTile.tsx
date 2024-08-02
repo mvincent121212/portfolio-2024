@@ -179,14 +179,14 @@ const Tile = styled.div<{ $isActiveWord: boolean; $isActiveIndex: boolean }>`
   }
 
   @media (max-width: 500px) {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
   }
 
-  @media (max-width: 400px) {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
+  // @media (max-width: 400px) {
+  //   width: 1.25rem;
+  //   height: 1.25rem;
+  // }
 
 `;
 

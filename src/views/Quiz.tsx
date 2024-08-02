@@ -85,11 +85,13 @@ const Content = styled.div`
   min-height: 100vh;
   height: auto;
   padding: 2rem 0;
+  margin: 0 1rem;
   background-color: ${mustard};
   display: flex;
 
   @media (max-width: 1100px) {
     flex-direction: column;
+    overflow-x: scroll;
   }
 `;
 
@@ -101,13 +103,14 @@ const GridSection = styled.div`
 `;
 
 const StartContainer = styled.div`
-  width: 100%;
+  width: calc(100% - 2rem);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: ${mustard};
   flex-direction: column;
+  margin: 0 1rem;
 `;
 
 const Button = styled.div`

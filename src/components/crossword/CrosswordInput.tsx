@@ -80,4 +80,10 @@ const Input = styled.input<{ $isActiveWord: boolean }>`
   font-size: 1.5rem;
   color: ${(props) => (props.$isActiveWord ? white : black)};
   cursor: pointer;
+
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
+
+
 `;
