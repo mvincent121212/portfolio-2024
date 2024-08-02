@@ -24,6 +24,7 @@ const Container = styled.div`
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 9999;
 `;
 
 const SSmallHeader = styled(SmallHeader)`
