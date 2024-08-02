@@ -122,7 +122,7 @@ export const BigCutout = styled(Header)`
   color: ${white};
   padding: 1rem;
   border-radius: 16px;
-  font-family: 'Darwin', Georgia, serif;
+  font-family: "Darwin", Georgia, serif;
 
   @media (max-width: 500px) {
     margin: 0 1rem;

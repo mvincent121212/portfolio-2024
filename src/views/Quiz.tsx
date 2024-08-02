@@ -85,9 +85,9 @@ const Content = styled.div`
   min-height: 100vh;
   height: auto;
   padding: 2rem 0;
-  margin: 0 1rem;
   background-color: ${mustard};
   display: flex;
+  margin: 0 auto;
 
   @media (max-width: 1100px) {
     flex-direction: column;
@@ -103,14 +103,14 @@ const GridSection = styled.div`
 `;
 
 const StartContainer = styled.div`
-  width: calc(100% - 2rem);
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: ${mustard};
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 auto;
 `;
 
 const Button = styled.div`
