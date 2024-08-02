@@ -6,6 +6,13 @@ import {
   HeaderWhite,
   SmallHeader,
 } from "../styles/Typography";
+import ArrowOneUrl from "../assets/images/arrow-1.png";
+import ArrowTwoUrl from "../assets/images/arrow-2.png";
+import ArrowThreeUrl from "../assets/images/arrow-3.png";
+import MadeynOneUrl from "../assets/images/madeyn-one.png";
+import MadeynTwoUrl from "../assets/images/madeyn-two.png";
+import TaxbitUrl from "../assets/images/taxbit.png";
+import ResumeUrl from "../assets/resources/michaelvincent_resume.pdf";
 
 const Experience = () => {
   return (
@@ -15,16 +22,13 @@ const Experience = () => {
           EXPERIENCE
           <SSmallHeader>
             &nbsp;&nbsp;&nbsp;&nbsp;(more details in my{" "}
-            <a
-              href="src/assets/resources/michaelvincent_resume.pdf"
-              target="blank"
-            >
+            <a href={ResumeUrl} target="blank">
               resume
             </a>
             )
           </SSmallHeader>
         </TopHeader>
-        <ArrowOne src="src/assets/images/arrow-1.png" />
+        <ArrowOne src={ArrowOneUrl} />
         <ExperienceSection>
           <LTextSection>
             <SHeaderWhite>Madeyn</SHeaderWhite>
@@ -41,14 +45,14 @@ const Experience = () => {
             </BodyTextWhite>
           </LTextSection>
           <ImagesSection>
-            <MadeynImg src="src/assets/images/madeyn-one.png" />
-            <MadeynImg src="src/assets/images/madeyn-two.png" />
+            <MadeynImg src={MadeynOneUrl} />
+            <MadeynImg src={MadeynTwoUrl} />
           </ImagesSection>
         </ExperienceSection>
-        <ArrowTwo src="src/assets/images/arrow-2.png" />
+        <ArrowTwo src={ArrowTwoUrl} />
         <ExperienceSection>
           <ImagesSection>
-            <TaxbitImg src="src/assets/images/taxbit-2.jpg" />
+            <TaxbitImg src={TaxbitUrl} />
           </ImagesSection>
           <RTextSection>
             <SHeaderWhiteRight>TaxBit</SHeaderWhiteRight>
@@ -64,7 +68,7 @@ const Experience = () => {
             </BodyTextWhite>
           </RTextSection>
         </ExperienceSection>
-        <ArrowThree src="src/assets/images/arrow-3.png" />
+        <ArrowThree src={ArrowThreeUrl} />
       </Content>
       <Footer>
         <SBodyTextWhite>
