@@ -13,6 +13,8 @@ import MadeynOneUrl from "../assets/images/madeyn-one.png";
 import MadeynTwoUrl from "../assets/images/madeyn-two.png";
 import TaxbitUrl from "../assets/images/taxbit.png";
 import ResumeUrl from "../assets/resources/michaelvincent_resume.pdf";
+import FigmaIconUrl from "../assets/images/figma.png";
+import GithubIconUrl from "../assets/images/github_white.png";
 
 const Experience = () => {
   return (
@@ -79,13 +81,13 @@ const Experience = () => {
           href="https://www.figma.com/design/wlaNfClV6CPfnPfGFM27dO/michael_vincent_website?node-id=0-1&t=EBPuxQWtl5W6uC1D-1"
           target="_blank"
         >
-          <FigmaIcon src="src/assets/images/figma.png" />
+          <FigmaIcon src={FigmaIconUrl} />
         </a>
         <a
-          href="https://www.figma.com/design/wlaNfClV6CPfnPfGFM27dO/michael_vincent_website?node-id=0-1&t=EBPuxQWtl5W6uC1D-1"
+          href="https://github.com/mvincent121212/portfolio-2024"
           target="_blank"
         >
-          <GithubIcon src="src/assets/images/github_white.png" />
+          <GithubIcon src={GithubIconUrl} />
         </a>
         <SBodyTextWhite>)</SBodyTextWhite>
       </Footer>
