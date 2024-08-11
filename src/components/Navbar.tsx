@@ -26,14 +26,14 @@ const Navbar = ({ isVisible }: NavbarProps) => {
         onMouseLeave={() => setIsExpanded(false)}
       >
         {isExpanded ? (
-          <NavbarContainer isExpanded={isExpanded} isVisible={isVisible}>
+          <NavbarContainer isVisible={isVisible}>
             <CircleNav color={green} circleLink="About" size="small" />
             <CircleNav color={night} circleLink="Experience" size="small" />
             <CircleNav color={mustard} circleLink="Quiz" size="small" />
             <CircleNav color={red} circleLink="Contact" size="small" />
           </NavbarContainer>
         ) : (
-          <Container>
+          <Container isVisible={isVisible}>
             <NavbarDisplay>
               <Text>Navigate</Text>
             </NavbarDisplay>
@@ -51,6 +51,7 @@ const NavbarWrapper = styled.div`
   bottom: 0;
   left: 0;
   padding: 1rem;
+  z-index: 9999;
 `;
 
 const ToggleCircle = styled.div`
@@ -59,22 +60,20 @@ const ToggleCircle = styled.div`
   justify-content: center;
 `;
 
-const NavbarContainer = styled.div<{ isVisible: boolean; isExpanded: boolean }>`
+const NavbarContainer = styled.div<{ isVisible: boolean }>`
   background-color: ${offWhite};
   border: 1px solid ${black};
   border-radius: 16px;
   padding: 0.5rem;
+  z-index: 9999;
   display: ${({ isVisible }) => (isVisible ? "flex" : "none")};
   justify-content: center;
   gap: 1rem;
   pointer-events: ${({ isVisible }) => (isVisible ? "auto" : "none")};
-  overflow: hidden;
-  z-index: 9999;
 
   @media (max-width: 768px) {
     display: none;
   }
-
 `;
 
 const NavbarDisplay = styled.div`
@@ -85,6 +84,7 @@ const NavbarDisplay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 `;
 
 const Text = styled.span`
@@ -93,6 +93,8 @@ const Text = styled.span`
   color: ${white};
 `;
 
-const Container = styled.div`
+const Container = styled.div<{ isVisible: boolean }>`
+  display: ${({ isVisible }) => (isVisible ? "block" : "none")};
+  pointer-events: ${({ isVisible }) => (isVisible ? "auto" : "none")};
   padding-bottom: 0.5rem;
 `;

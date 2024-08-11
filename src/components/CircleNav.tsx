@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { black, offBlack, offWhite, white } from "../constants/colors";
+import { black, offWhite } from "../constants/colors";
 
 /**
  * color: hex
@@ -35,13 +35,11 @@ const Circle = styled.div<{ size: "large" | "small"; color: string }>`
   align-items: center;
   justify-content: center;
 
-  ${({ size }) =>
+  ${({ size, color }) =>
     size === "large" &&
     `
       &:hover {
-        background-color: ${offBlack};
-        border: 4px solid currentColor;
-        border-radius: 50%;
+        box-shadow: 0 0 0 4px ${color}, 0 0 8px ${black};
       }
     `}
 
