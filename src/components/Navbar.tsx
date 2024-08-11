@@ -88,7 +88,7 @@ const NavbarDisplay = styled.div`
 `;
 
 const Text = styled.span`
-  font-size: "0.75rem";
+  font-size: 0.75rem;
   font-family: "Darwin", Georgia, serif;
   color: ${white};
 `;
