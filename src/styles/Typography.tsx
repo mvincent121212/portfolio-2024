@@ -89,6 +89,10 @@ export const BodyText = styled.p`
   margin: 2rem 0;
   color: ${offBlack};
 
+  @media (max-width: 1500px) {
+    font-size: 1.75rem;
+  }
+
   @media (max-width: 1280px) {
     font-size: 1.5rem;
   }
