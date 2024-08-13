@@ -21,7 +21,7 @@ function App() {
     setIsNavVisible(scrollTop > threshold);
   }, []);
 
-  const debouncedHandleScroll = useCallback(debounce(handleScroll, 300), [
+  const debouncedHandleScroll = useCallback(debounce(handleScroll, 50), [
     handleScroll,
   ]);
 
